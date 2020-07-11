@@ -9,7 +9,7 @@
                </div>
                <div class="header-title">
                   <h1>View Student</h1>
-                  <small>View Stjudent</small>
+                  <small>View Student</small>
                </div>
             </section>
 
@@ -93,7 +93,7 @@
                                        <th>Name</th>
                                        <th>Email</th>
                                        <th>Data OF Birth</th>
-                                       <th>Email</th>
+                                      
                                        <th>Mobile</th>
                                        <th>Address</th>
                                        <th>Image</th>
@@ -110,7 +110,7 @@
                                        <td>{{$detail->name}}</td>
                                        <td>{{$detail->email}}</td>
                                         <td>{{$detail->dob}}</td>
-                                       <td>{{$detail->email}}</td>
+                                      
                                        <td>{{$detail->phone_number}}</td>
                                        <td>{{$detail->permanent_address}}</td>
                                        
@@ -121,12 +121,12 @@
 
 
                                        <td>
-
-                                           <a href="{{url('/student/print/' .$detail->id)}}" class="btn btn-info btn-sm"><i class="fa fa-print" aria-hidden="true" title="Print"></i></a>
+                                       
+                                           <a href="{{url('/studentMorar/print/' .$detail->id)}}" class="btn btn-info btn-sm"><i class="fa fa-print" aria-hidden="true" title="Print"></i></a>
 
                                             <a href="{{url('/student/edit/' .$detail->id)}}" class="btn btn-success btn-sm"><i class="fa fa-pencil" aria-hidden="true" title="Edit"></i></a>
 
-                                          <a href="{{url('/student/delete/' .$detail->id)}}" class="btn btn-danger btn-sm"><i class="fa fa-trash-o" title="Delete"></i></a>
+                                          <a href="{{url('/student/edit/' .$detail->id)}}" class="btn btn-danger btn-sm"><i class="fa fa-trash-o" title="Delete"></i></a>
 
 
                                        </td>

@@ -1,76 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<!-- Mirrored from thememinister.com/crm/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Jun 2019 11:09:03 GMT -->
 <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>CRM Admin Panel</title>
+    <title>K.G. Children School</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->  
+    <link rel="icon" type="image/png" href="form/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="form/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="form/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="form/fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="form/vendor/animate/animate.css">
+<!--===============================================================================================-->  
+    <link rel="stylesheet" type="text/css" href="form/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="form/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="form/vendor/select2/select2.min.css">
+<!--===============================================================================================-->  
+    <link rel="stylesheet" type="text/css" href="form/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="form/css/util.css">
+    <link rel="stylesheet" type="text/css" href="form/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+    
+    <div class="limiter">
+        <div class="container-login100" style="background-image: url('form/images/bg-02.jpg');">
+            <div class="wrap-login100">
+                <form class="login100-form validate-form" action="{{url('/admin')}}" method="post">
+                    @csrf
+                    <span class="login100-form-logo">
+                        <img src="logo/logo2.png">
+                    </span>
 
-        <!-- Favicon and touch icons -->
-        <link rel="shortcut icon" href="assets/dist/img/ico/favicon.png" type="image/x-icon">
-        <!-- Bootstrap -->
-        <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <!-- Bootstrap rtl -->
-        <!--<link href="assets/bootstrap-rtl/bootstrap-rtl.min.css" rel="stylesheet" type="text/css"/>-->
-        <!-- Pe-icon-7-stroke -->
-        <link href="assets/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet" type="text/css"/>
-        <!-- style css -->
-        <link href="assets/dist/css/stylecrm.css" rel="stylesheet" type="text/css"/>
-        <!-- Theme style rtl -->
-        <!--<link href="assets/dist/css/stylecrm-rtl.css" rel="stylesheet" type="text/css"/>-->
-    </head>
-    <body>
-        <!-- Content Wrapper -->
-        <div class="login-wrapper">
-            <!-- <div class="back-link">
-                <a href="index.html" class="btn btn-add">Back to Dashboard</a>
-            </div> -->
-            <div class="container-center">
-            <div class="login-area">
-                <div class="panel panel-bd panel-custom">
-                    <div class="panel-heading">
-                        <div class="view-header">
-                            <div class="header-icon">
-                                <i class="pe-7s-unlock"></i>
-                            </div>
-                            <div class="header-title">
-                                <h3>Login</h3>
-                                <small><strong>Please enter your credentials to login.</strong></small>
-                            </div>
-                        </div>
+                    <span class="login100-form-title p-b-34 p-t-27" style="font-weight: bold;">
+                        K.G. Children School
+                    </span>
+
+                    <div class="wrap-input100 validate-input" data-validate = "Enter Email">
+                        <input class="input100" type="email" name="email" placeholder="E-mail">
+                        <span class="focus-input100" data-placeholder="&#xf207;"></span>
                     </div>
-                    <div class="panel-body">
-                        <form action="{{url('/admin')}}" id="loginForm" method="post">
-                            @csrf
-                            <div class="form-group">
-                                <label class="control-label" for="username">Email</label>
-                                <input type="email" placeholder="example@gmail.com" title="Please enter you email" required="" value="" name="email" id="email" class="form-control">
-                                <span class="help-block small">Your unique username to app</span>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="password">Password</label>
-                                <input type="password" title="Please enter your password" placeholder="******" required="" value="" name="password" id="password" class="form-control">
-                                <span class="help-block small">Your strong password</span>
-                            </div>
-                            <div>
-                                <button class="btn btn-add">Login</button>
-                                <a class="btn btn-warning" href="register.html">Register</a>
-                            </div>
-                        </form>
-                        </div>
-                        </div>
-                </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Enter Password">
+                        <input class="input100" type="password" name="password" placeholder="Password">
+                        <span class="focus-input100" data-placeholder="&#xf191;"></span>
+                    </div>
+
+                   
+
+                    <div class="contact100-form-checkbox" style="visibility: hidden;">
+                        <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+                        <label class="label-checkbox100" for="ckb1">
+                            Remember me
+                        </label>
+                    </div>
+
+                    <div class="container-login100-form-btn">
+                        <button class="login100-form-btn">
+                            Login
+                        </button>
+                    </div>
+
+                    
+
+                    
+                </form>
             </div>
         </div>
-        <!-- /.content-wrapper -->
-        <!-- jQuery -->
-        <script src="assets/plugins/jQuery/jquery-1.12.4.min.js" type="text/javascript"></script>
-        <!-- bootstrap js -->
-        <script src="assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-    </body>
+    </div>
+    
 
-<!-- Mirrored from thememinister.com/crm/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Jun 2019 11:09:03 GMT -->
+    <div id="dropDownSelect1"></div>
+    
+<!--===============================================================================================-->
+    <script src="form/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+    <script src="form/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+    <script src="form/vendor/bootstrap/js/popper.js"></script>
+    <script src="form/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+    <script src="form/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+    <script src="form/vendor/daterangepicker/moment.min.js"></script>
+    <script src="form/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+    <script src="form/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+    <script src="form/js/main.js"></script>
+
+</body>
 </html>

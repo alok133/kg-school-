@@ -47,8 +47,8 @@
 
                                   <label>Do You Belong To SC / ST / O.B.C </label><br>
 
-                                  <input type="radio" value="yes" name="SC_ST"{{ $print->SC_ST == 'yes' ? 'checked' : '' }}> Yes
-                                  <input type="radio" value="no" name="SC_ST" {{ $print->SC_ST == 'no' ? 'checked' : '' }}> No <br><br>
+                                  <input type="radio" value="Yes" name="SC_ST"{{ $print->SC_ST == 'Yes' ? 'checked' : '' }}> Yes
+                                  <input type="radio" value="No" name="SC_ST" {{ $print->SC_ST == 'No' ? 'checked' : '' }}> No <br><br>
 
                                   <label>Caste</label><br>
                                   <input type="text" name="caste" value="{{$print->caste}}" class="form-control">

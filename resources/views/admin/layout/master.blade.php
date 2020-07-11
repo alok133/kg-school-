@@ -12,6 +12,9 @@
       <link rel="shortcut icon" href="{{asset('assets/dist/img/ico/favicon.png')}}" type="image/x-icon">
       <!-- Start Global Mandatory Style
          =====================================================================-->
+
+         <link rel="stylesheet" type="text/css" href="/DataTables/datatables.css">
+
          <link rel="stylesheet" type="text/css" href="{{asset('/form/form.css')}}">
       <!-- jquery-ui css -->
       <link href="{{asset('assets/plugins/jquery-ui-1.12.1/jquery-ui.min.css')}}" rel="stylesheet" type="text/css"/>
@@ -67,11 +70,8 @@
          @include('admin.layout.header')
          @include('admin.layout.sidebar')
          @yield('content')
-        
-
-
-
-              
+         @include('admin.layout.footer')
+           
          
       </div>
 
@@ -130,6 +130,18 @@
       <script src="{{asset('assets/dist/js/dashboard.js')}}" type="text/javascript"></script>
       <!-- End Theme label Script
          =====================================================================-->
+
+         <script type="text/javascript" charset="utf8" src="/DataTables/datatables.js"></script>
+
+         <script>
+           $(document).ready( function () {
+    $('#table_id').DataTable({
+
+        aaSorting: [[0, 'desc']]
+
+    });
+} );
+         </script>
       <script>
          function dash() {
          // single bar chart
@@ -212,6 +224,5 @@
       </script>
        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-toggle/2.2.2/css/bootstrap-toggle.css">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-toggle/2.2.2/js/bootstrap-toggle.js"></script>
-      @include('sweetalert::alert')
 </body>
    </html>

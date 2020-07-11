@@ -20,7 +20,9 @@
 
 
 
-Route::match(['get','post'],'/','StudentController@addStudent');
+Route::match(['get','post'],'/kg-morar','StudentController@addStudent');
+
+Route::match(['get','post'],'/kg-maharajpura','MaharajpuraStudentController@addStudent');
 
 // Route::get('/send-mail/{student}','MailSend@mailsend');
 
@@ -37,13 +39,35 @@ Route::group(['middleware'=>['auth']],function(){
 
 Route::match(['get','post'],'/dashboard','AdminController@dashboard');
 
+
+// ****************************Morar Branch***********************
+
 Route::match(['get','post'],'/viewStudent','StudentController@viewStudent');
 
 Route::match(['get','post'],'/student/delete/{id}','StudentController@deleteStudent');
 
-Route::match(['get','post'],'/student/print/{id}','StudentController@printStudent');
+Route::match(['get','post'],'/studentMorar/print/{id}','StudentController@printStudent');
 
 Route::match(['get','post'],'/student/edit/{id}','StudentController@editStudent');
+
+
+
+Route::get('/downloadPDFMorar/{id}','GenratePdfController@downloadPDFMorar');
+
+
+
+// ****************************Maharajpura Branch***********************
+
+Route::match(['get','post'],'/viewStudentMaharajpura','MaharajpuraStudentController@viewStudentMaharajpura');
+
+Route::match(['get','post'],'/edit/StudentMaharajpura/{id}','MaharajpuraStudentController@editStudentMaharajpura');
+
+Route::match(['get','post'],'/delete/StudentMaharajpura/{id}','MaharajpuraStudentController@deleteStudentMaharajpura');
+
+
+Route::match(['get','post'],'/print/StudentMaharajpura/{id}','MaharajpuraStudentController@printStudentMaharajpura');
+
+Route::get('/downloadPDF/{id}','GenratePdfController@downloadPDF');
 
 });
 

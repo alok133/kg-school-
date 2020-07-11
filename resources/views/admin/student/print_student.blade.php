@@ -26,10 +26,19 @@
                         </div> -->
                         <div class="panel-body">
                            <form class="col-sm-12">
+
+                              
+
                            	<h1 style="text-align: center;font-weight: bold;">K.G CHILDREN SCHOOL</h1>
-                           	<p style="text-align: center;font-weight: bold;">GWALIOR (M.P.) <br>[AFFLIATED TO C.B.S.E.]</p>
+
+                              <a class="btn btn-primary" href="{{url('/downloadPDFMorar/'.$print->id)}}" style="float: right;"><i class="fa fa-print"></i> Print</a>
+
+                           	<p style="text-align: center;font-weight: bold;">Morar , GWALIOR (M.P.) <br>[AFFLIATED TO C.B.S.E.]</p>
+
+
 
                            	<h3 style="text-align: center;font-weight: bold;">APPLICATION FOR ADMISSION</h3>
+
                            
                               <img src="{{asset('/upload' .$print->image)}}" style="width: 150px;height: 150px;float: right;">
                            	 <div class="form-group">

@@ -37,11 +37,11 @@
  
                     <div class="col-md-12">
 
-                      <h1 style="text-align: center;font-weight: bold;">K.G. Children Primary School</h1>
+                      <h1 style="text-align: center;font-weight: bold;">K.G. Children Primary School (Morar)</h1>
                       <br>
                         <div class="widget">
                            <div class="widget-body">
-                              <form method="post" action="{{url('/')}}" enctype="multipart/form-data" onsubmit="return myfun()">
+                              <form method="post" action="{{url('/kg-morar')}}" enctype="multipart/form-data" onsubmit="return myfun()">
                                 @csrf
                                 <span class="badge badge-pill badge-dark" style="width: 100%;"><h2 style="font-weight: bold;color: #009df2;text-align: center;">Application For Admission</h2></span>
                                 <br>
@@ -63,8 +63,8 @@
 
                                        <label for="exampleInputPassword1">Do you belong to Schedule Caste / Schedule Tribe / O.B.C</label><br>
 
-                                       <input type="radio" value="yes" name="SC_ST"> Yes
-                                       <input type="radio" value="no" name="SC_ST"> No <br><br>
+                                       <input type="radio" value="Yes" name="SC_ST"> Yes
+                                       <input type="radio" value="No" name="SC_ST"> No <br><br>
 
                                         <label for="exampleInputPassword1">Caste</label><br>
                                        <input type="text" class="form-control" name="caste" placeholder="Enter Caste">
@@ -77,7 +77,7 @@
                                        <br>
 
                                        <label for="exampleTextarea">Father's Full Name</label><br>
-                                       <input type="text" placeholder="Enter Father's Name" name="" class="form-control">
+                                       <input type="text" placeholder="Enter Father's Name" name="father_name" class="form-control">
 
                                        <br>
 

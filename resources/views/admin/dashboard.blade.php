@@ -8,7 +8,7 @@
                   <i class="fa fa-dashboard"></i>
                </div>
                <div class="header-title">
-                  <h1>Student Internship</h1>
+                  <h1>K.G School Dashboard</h1>
                </div>
             </section>
             <!-- Main content -->
@@ -19,15 +19,19 @@
                         <div class="statistic-box">
                            <i class="fa fa-user-plus fa-3x"></i>
                            <div class="counter-number pull-right">
-                              <span class="count-number">11</span> 
+                              @if(Auth::user()->admin==1)
+                              <span class="count-number">{{$count}}</span> 
+                              @else
+                              <span class="count-number">{{$countMorar}}</span> 
+                              @endif
                               <span class="slight"><i class="fa fa-play fa-rotate-270"> </i>
                               </span>
                            </div>
-                           <h3> Active Client</h3>
+                           <h3> Total Students Registered</h3>
                         </div>
                      </div>
                   </div>
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" style="visibility: hidden;">
                      <div id="cardbox2">
                         <div class="statistic-box">
                            <i class="fa fa-user-secret fa-3x"></i>
@@ -40,7 +44,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" style="visibility: hidden;">
                      <div id="cardbox3">
                         <div class="statistic-box">
                            <i class="fa fa-money fa-3x"></i>
@@ -53,7 +57,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" style="visibility: hidden;">
                      <div id="cardbox4">
                         <div class="statistic-box">
                            <i class="fa fa-files-o fa-3x"></i>
@@ -68,7 +72,7 @@
                   </div>
                </div>
                <div class="row">
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="visibility: hidden;">
                      <div class="panel panel-bd lobidisable">
                         <div class="panel-heading">
                            <div class="panel-title">
@@ -123,7 +127,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="visibility: hidden;">
                      <div class="panel panel-bd lobidisable">
                         <div class="panel-heading">
                            <div class="panel-title">
@@ -175,7 +179,7 @@
                      </div>
                   </div>
                </div>
-               <div class="row">
+               <div class="row" style="visibility: hidden;">
                   <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                      <div class="panel panel-bd lobidisable">
                         <div class="panel-heading">
@@ -369,7 +373,7 @@
                      </div>
                   </div>
                </div>
-               <div class="row">
+               <div class="row" style="visibility: hidden;">
                   <!-- Barchart -->
                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                      <div class="panel panel-bd lobidisable">
@@ -398,7 +402,7 @@
                   </div>
                </div>
                <!-- /.row -->
-               <div class="row">
+               <div class="row" style="visibility: hidden;">
                   <div class="col-xs-12 col-sm-8">
                      <div class="panel panel-bd lobidrag">
                         <div class="panel-heading">

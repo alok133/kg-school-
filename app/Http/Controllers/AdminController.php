@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use Session;
+use App\MaharajpuraStudent;
+use App\Student;
 
 class AdminController extends Controller
 {
@@ -29,7 +31,10 @@ class AdminController extends Controller
 
     public function dashboard(){
 
-    	return view('admin.dashboard');
+        $count=MaharajpuraStudent::count();
+        $countMorar=Student::count();
+
+    	return view('admin.dashboard',compact('count','countMorar'));
     }
 
     public function logout(){
