@@ -3,13 +3,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="/logo/image20.jpg">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <!-- <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="#"> -->
-    <title>K.G. Children Primary School</title>
+    <title>K.G. Children Senior School</title>
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -143,13 +144,6 @@
                                        <label for="exampleInputEmail1">Your  Permanent Address</label> <br>
                                        <input type="text" placeholder="Enter Permanent Address" name="permanent_address" class="form-control"  required>
 
-                                      
-                                       <br>
-
-                                       <label for="exampleInputEmail1">Bonafide Residence Of M.P. or other</label> <br>
-                                       <input type="text" placeholder="Enter Your Bonafide Residence" name="bonafide_residence" class="form-control" required>
-
-                                      
 
                                     </div>
 
@@ -158,6 +152,11 @@
 
 
                                     <div class="form-group col-sm-6">
+
+                                      <label for="exampleInputEmail1">Bonafide Residence Of M.P. or other</label> <br>
+                                       <input type="text" placeholder="Enter Your Bonafide Residence" name="bonafide_residence" class="form-control" required>
+
+                                       <br>
                                
 
                                        <label for="exampleInputEmail1">Name Of Previous School Last Attend</label> <br>

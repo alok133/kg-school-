@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->  
-    <link rel="icon" type="image/png" href="form/images/icons/favicon.ico"/>
+  <link rel="shortcut icon" type="image/x-icon" href="/logo/image20.jpg">
 <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="form/vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->

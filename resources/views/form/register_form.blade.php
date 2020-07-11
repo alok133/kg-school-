@@ -3,6 +3,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="/logo/image20.jpg">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
